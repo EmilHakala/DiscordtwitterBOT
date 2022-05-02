@@ -44,7 +44,7 @@ async def raid(ctx):
 
 #main loop
 
-@tasks.loop(minutes=30.0, count=None)
+@tasks.loop(minutes=120.0, count=None)
 async def my_background_task():
     await bot.wait_until_ready()
     global pstID
